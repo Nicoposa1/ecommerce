@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { SEO, Layout, Jumbo, Image } from '../components'
+import { SEO, Jumbo, Image } from '../components'
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
     <Jumbo />
       <h1>Hi people</h1>
@@ -16,7 +16,7 @@ const IndexPage = () => (
     <Link to="/Gracias/">Go to Gracias</Link> <br />
     <Link to='/Error/'>Go to Error</Link> <br/>
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  </>
 )
 
 export default IndexPage

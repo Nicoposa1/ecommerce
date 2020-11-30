@@ -8,22 +8,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Content, Footer } from '../styles/components'
-import { createGlobalStyle } from 'styled-components'
-
-
 
 import Header from "./header"
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0 !important;
-    font-family: Roboto, sans-serif;
-  }
-`
-
 const Layout = ({ children }) => (
       <>
-        <GlobalStyle />
         <Header/>
         <Content>
           <main>{children}</main>

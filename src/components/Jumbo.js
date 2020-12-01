@@ -1,13 +1,16 @@
-import React from 'react'
-import {StyledJumbo} from '../styles/components'
+import React from "react"
+import { StyledJumbo } from "../styles/components"
+import { Image } from "./"
 
-export default function Jumbo({description}) {
+
+export default function Jumbo({ description }) {
   return (
     <StyledJumbo>
-      <div className="">
+      <div>
         <h2>¡Consigue el mejor swag exclusivo y especial de Platzi!</h2>
         <small>{description}</small>
       </div>
+      <Image name="icon" />
     </StyledJumbo>
   )
 }

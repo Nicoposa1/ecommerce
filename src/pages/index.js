@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-import { SEO, Jumbo, Image } from '../components'
+import { SEO, Jumbo } from '../components'
+import styled from 'styled-components'
 
 export const query = graphql `
   query GET_DESCRIPTION {
@@ -17,19 +17,23 @@ export const query = graphql `
   }
 `
 
+const Button = styled.button`
+  width: 8rem;
+  background-color: #98ca3f;
+  border:none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: ${props => props.color};
+  &:hover{
+    transform: scale(1.4)
+  }
+`
+
 const IndexPage = ({data}) =>(
   <>
     <SEO title="Home" />
     <Jumbo description={data.allSite.edges[0].node.siteMetadata.description} />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
-    <Link to="/Gracias/">Go to Gracias</Link> <br />
-    <Link to='/Error/'>Go to Error</Link> <br/>
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+      <Button color='white'>Comprar</Button>
   </>
 )
 

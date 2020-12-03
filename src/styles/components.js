@@ -155,7 +155,7 @@ export const StyledProducts = styled.div`
   & img {
     width: 100%;
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     margin: 0;
   }
@@ -214,7 +214,7 @@ export const StyledProductDetail = styled.div`
   height: 82vh;
   img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     margin: 0;
   }

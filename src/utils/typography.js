@@ -4,12 +4,11 @@ const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.666,
   headerFontFamily: [
-    'Lato',
+    'Roboto',
     'Helvetica Neue',
     'Arial'
   ],
   bodyFontFamily: [
-    'Open Sans',
     'Robot',
     'Georgia'
   ]

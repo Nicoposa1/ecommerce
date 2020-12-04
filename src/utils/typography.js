@@ -9,7 +9,7 @@ const typography = new Typography({
     'Arial'
   ],
   bodyFontFamily: [
-    'Robot',
+    'Roboto',
     'Georgia'
   ]
 })

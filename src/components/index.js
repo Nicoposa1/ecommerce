@@ -5,3 +5,5 @@ export { default as Image } from "./image"
 export { default as Jumbo } from './Jumbo'
 export { default as Product } from './Product'
 export { default as ProductDetail } from './productDetail'
+export { default as Stars } from './stars'
+export { default as CartComponent } from './CartComponent'

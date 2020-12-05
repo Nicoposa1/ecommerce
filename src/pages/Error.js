@@ -9,7 +9,7 @@ export default function Error() {
     <div>
       <SEO title='Compra cancelada' />
       <Purchase>
-        <h2>Compra Candelada</h2>
+        <h2>Compra Cancelada</h2>
           <p>Lamentamos que tu compra fue cancelada</p>
           <p>¡Te esperamos de vuelta, no pares de aprender!</p>
           <span rol='img' aria-label='emoji'>💚</span>

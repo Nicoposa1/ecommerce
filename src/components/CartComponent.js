@@ -27,11 +27,11 @@ export default function CartComponent() {
 
   const handleSubmit = async e => {
     e.preventDefault()
+
+    let prod = cart.map(({ id, qty }) => ({ price: id, quantity: qty }))
+
     const { error } = await stripe.redirectToCheckout({
-      lineItems: cart.map(({ id, quantity}) => ({
-        price: id,
-        quantity : quantity,
-      })),
+      lineItems: prod,
       mode: 'payment',
       successUrl: process.env.SUCCESS_REDIRECT,
       cancelUrl: process.env.CANCEL_REDIRECT,
